@@ -5,6 +5,7 @@ import {
 } from "react-router-dom";
 
 import './index.scss';
+import './style.css';
 
 import App from './App';
 
