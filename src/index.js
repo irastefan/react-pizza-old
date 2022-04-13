@@ -9,9 +9,16 @@ import './style.css';
 
 import App from './App';
 
+import store from './redux/store'
+import {Provider} from 'react-redux'
+
+console.log(store.getState())
+
 ReactDOM.render(
   <Router>
+    <Provider store={store}>
       <App />
+    </Provider>
   </Router>,
   document.getElementById('root')
 );
