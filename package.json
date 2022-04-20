@@ -23,8 +23,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "server": "json-server --watch db.json --port 3001"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
@@ -32,7 +31,7 @@
       "react-app/jest"
     ]
   },
-  "proxy": "http://localhost:3001",
+  "proxy": "http://react-pizza.irastefan.com",
   "browserslist": {
     "production": [
       ">0.2%",
@@ -46,6 +45,6 @@
     ]
   },
   "devDependencies": {
-    "sass": "^1.50.0"
+    "sass": "^1.50.1"
   }
 }
