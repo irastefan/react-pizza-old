@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Button from '../Button'
 
 const PizzaBlock = ({id, name, imageUrl, price, types, sizes, onClickAddPizza, itemCartCount}) => {
-  const arrTypes = ['тонкое', 'традиционное']
+  const arrTypes = ['Thin Crust Pizza', 'Thick Crust Pizza']
   const arrSizes = [26, 30, 40]
 
   const [activeType, setActiveType] = useState(types[0])
@@ -66,7 +66,7 @@ const PizzaBlock = ({id, name, imageUrl, price, types, sizes, onClickAddPizza, i
             </ul>
         </div>
         <div className="pizza-block__bottom">
-            <div className="pizza-block__price">от {price} ₽</div>
+            <div className="pizza-block__price"> {price} $</div>
             <Button onClick={onAddPizza} className='button--add' outline>
             <svg
                 width="12"
@@ -80,7 +80,7 @@ const PizzaBlock = ({id, name, imageUrl, price, types, sizes, onClickAddPizza, i
                 fill="white"
                 />
             </svg>
-            <span>Добавить</span>
+            <span>Add to cart</span>
             {itemCartCount && <i>{itemCartCount}</i>}
             </Button>
         </div>

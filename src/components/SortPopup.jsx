@@ -37,7 +37,7 @@ const SortPopup = React.memo(function SortPopup ({activeSortType, onSelectSortTy
                     fill="#2C2C2C"
                   />
                 </svg>
-                <b>Сортировка по:</b>
+                <b>Sort by:</b>
                 <span onClick={toggleVisiblePopup}>{currentLabel}</span>
               </div>
               {visiblePopup && <div className="sort__popup">
