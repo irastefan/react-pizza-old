@@ -84,7 +84,7 @@ const Cart = () => {
             </div>
           </div>
           : <div className="cart cart--empty">
-            <h2>Cart empty <i>😕</i></h2>
+            <h2>Cart is empty <i>😕</i></h2>
             <p>
             </p>
             <img src={cartEmptyImg} alt="Empty cart" />
