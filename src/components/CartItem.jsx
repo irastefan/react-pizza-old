@@ -14,7 +14,7 @@ const CartItem = ({id, name, price, count, type, size, onRemoveItem, arrayVariat
         <div className="cart__item-info">
         <h3>{name}</h3>
         {
-            arrayVariations(id).map(({type, size}) => <p>{type} тесто, {size} cm.</p>)
+            arrayVariations(id).map(({type, size}) => <p>{type}, {size} cm.</p>)
         }
         
         </div>
@@ -36,7 +36,7 @@ const CartItem = ({id, name, price, count, type, size, onRemoveItem, arrayVariat
         </div>*/}
         </div>
         <div className="cart__item-price">
-        <b>{price} ₽</b>
+        <b>{price} $</b>
         </div>
         <div className="cart__item-remove"  onClick={() => onRemoveItem(id)}>
         <div className="button button--outline button--circle">
